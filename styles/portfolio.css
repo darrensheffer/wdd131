@@ -1,0 +1,9 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.darktext {
+    background-color: #484bff;
+    padding: 1em;
+    width: 200px;
+}
