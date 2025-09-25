@@ -1,0 +1,57 @@
+body {
+    width: 600px;
+    margin: 5%;
+    border: 1px, solid, black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 70px;
+    font-size: 20px;
+}
+
+header {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h1 {
+    letter-spacing: 5px;
+}
+
+h4 {
+    color: #006EB6;
+    border-bottom: 1px solid #006EB6;
+}
+
+#list-heading {
+    font-style: italic;
+}
+
+main {
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.list-elements {
+    padding-top: 10px;
+}
+
+footer {
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h4 {
+    color: #4F9ACF;
+}
+
