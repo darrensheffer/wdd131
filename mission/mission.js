@@ -3,15 +3,15 @@ const body = document.body;
 const logo = document.querySelector("#logo");
 
 function applyTheme(theme) {
-if (theme === 'dark') {
-    body.classList.add('dark-mode');
-    logo.src = "images/byui-logo_white.png"
-} else {
-    body.classList.remove('dark-mode');
-    logo.src = "images/byui-logo_blue.webp"
-}
-
-localStorage.setItem('theme', theme);
+    if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        logo.src = "images/byui-logo_white.png"
+    } 
+    else {
+        body.classList.remove('dark-mode');
+        logo.src = "images/byui-logo_blue.webp"
+    }
+    localStorage.setItem('theme', theme);
 }
 
 const savedTheme = localStorage.getItem('theme');
@@ -27,5 +27,5 @@ applyTheme('dark');
 
 themeSelector.addEventListener('change', (event) => {
 const selectedTheme = event.target.value;
-applyTheme(selectedTheme);0
+applyTheme(selectedTheme);
 });
