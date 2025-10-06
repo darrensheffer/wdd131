@@ -1,0 +1,125 @@
+ @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid White;
+    margin: 50px;
+    box-shadow: 3px 3px 5px black;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--text-light);
+    font-family: var(--primary-font);
+    font-size: 1.3em;
+}
+
+a:link, a:visited {
+    color: var(--text-light);
+}
+
+/* .viewer {
+    z-index: 10;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    top: 0; left: 0; bottom: 0; right: 0;
+} */
+
+/* .viewer-img {
+    width: 100%;
+    height: 100%;
+} */
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10%;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.menu-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+a {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+        .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
