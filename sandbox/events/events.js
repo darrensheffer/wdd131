@@ -58,8 +58,8 @@ function completeTask(taskElement) {
 
 function manageTasks(event) {
   // did they click the delete or complete icon?
-  console.log(event.target);
-  console.log(event.currentTarget);
+  console.log("Event", event.target);
+  console.log("Current Event", event.currentTarget);
   // event.target will point to the actual icon clicked on. We need to get the parent li to work with however. HINT: Remember element.closest()? Look it up if you don't
 
   // because we added 'data-action="delete"' to each icon in a task we can access a dataset property on our target (e.target.dataset.action)
@@ -69,3 +69,5 @@ function manageTasks(event) {
 // Add your event listeners here
 // We need to attach listeners to the submit button and the list. Listen for a click, call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks.
 document.querySelector("#submitTask").addEventListener("click", newTask);
+
+document.querySelector("#todoList").addEventListener("click", manageTasks);

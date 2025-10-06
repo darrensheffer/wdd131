@@ -1,4 +1,10 @@
-const apples = 10;
-const oranges = 5;
+document.querySelector("select").addEventListener("change", changeTheme);
 
-console.log(apples + oranges);
+
+function changeTheme(event) {
+    const mode = document.querySelector("select");
+    if (mode == "Dark") {
+        document.querySelector("body")
+        mode.classList.add("dark")
+    }
+}
